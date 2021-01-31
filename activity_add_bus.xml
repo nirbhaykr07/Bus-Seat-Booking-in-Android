@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addBusActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/img_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/edittext_enter_busID"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/num"
+        android:background="#ffffff"
+        android:paddingLeft="2dp"
+        android:hint="@string/enter_bus_id"/>
+
+    <EditText
+        android:id="@+id/edittext_bus_source"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/bus"
+        android:background="#ffffff"
+        android:hint="@string/enter_source"/>
+
+    <EditText
+        android:id="@+id/edittext_bus_destination"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/bus"
+        android:background="#ffffff"
+        android:paddingLeft="2dp"
+        android:hint="@string/enter_destination"/>
+
+    <EditText
+        android:id="@+id/edittext_bus_seats"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/seat"
+        android:background="#ffffff"
+        android:hint="@string/total_seats"/>
+
+    <EditText
+        android:id="@+id/edittext_journey_date"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/date"
+        android:background="#ffffff"
+        android:paddingLeft="2dp"
+        android:hint="@string/journey_date"/>
+
+    <EditText
+        android:id="@+id/edittext_journey_time"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/time"
+        android:background="#ffffff"
+        android:hint="@string/journey_time"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_OK"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#2FE308"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ok"/>
+
+        <Button
+            android:id="@+id/button_Cancel"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#2FE308"
+            android:layout_marginLeft="15dp"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

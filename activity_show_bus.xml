@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showBusActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/img_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo"/>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/bus"
+            android:layout_marginLeft="10dip"
+            android:background="#13EABD"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:hint="Bus"/>
+
+        <Spinner
+            android:id="@+id/spinnerBus"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dip"
+            android:layout_marginLeft="10dip"
+            android:background="#13EABD"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:prompt="@string/enter_source" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/seat"
+            android:layout_marginLeft="10dip"
+            android:background="#13EABD"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:hint="Available Seats"/>
+
+        <EditText
+            android:id="@+id/bus_AvailableSeats"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:background="#13EABD"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/time"
+            android:layout_marginLeft="10dip"
+            android:background="#13EABD"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:hint="Bus Time"/>
+
+        <EditText
+            android:id="@+id/bus_time"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:background="#13EABD"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/seat"
+            android:layout_marginLeft="10dip"
+            android:background="#13EABD"
+            android:paddingLeft="2dp"
+            android:padding="10dip"
+            android:hint="Enter Seats"/>
+
+        <EditText
+            android:id="@+id/bus_seats"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="10dip"
+            android:paddingLeft="2dp"
+            android:hint="Total Seats"
+            android:padding="10dip"
+            android:background="#13EABD"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="#2FE308"
+            android:text="Book"/>
+
+        <Button
+            android:id="@+id/button_Cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dip"
+            android:background="#2FE308"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>
